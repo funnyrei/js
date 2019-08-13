@@ -1,3 +1,5 @@
+'use strict';
+
 function celciusToFahrenheit(){
     let celcius = document.getElementById('celcius').value;
     let fahrenheit = (celcius * 9 / 5) + 32;
