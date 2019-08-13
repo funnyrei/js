@@ -1,12 +1,12 @@
-'use srtrict';
-let Tc = 36;
-let Tf = ((9 / 5) * Tc + 32);
- alert(Tf);
+function celciusToFahrenheit(){
+    let celcius = document.getElementById('celcius').value;
+    let fahrenheit = (celcius * 9 / 5) + 32;
+    document.getElementById('fahrenheit').value = fahrenheit;
 
+}
 
-let name = 'Василий';
-let admin = name;
-alert(admin);
-
-let sum =  1000 + "108";
-alert(sum);
+function fahrenheitToCelcius(){
+    let fahrenheit = document.getElementById('fahrenheit').value;
+    let celcius = (fahrenheit - 32) * 5 / 9;
+    document.getElementById('celcius').value = celcius;
+}
